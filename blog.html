@@ -84,14 +84,17 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">With the introduction of ES6, JavaScript added a new feature to write
-                        multiline code dynamically.
-                        This is known as template literals which is done by using back-ticks (``) rather than the
-                        conventional use of double ("") or single ('') quotes to define a string.
-                        This feature allows the users to insert variables and expressions into strings without needing
-                        to concatenate like in older versions of JavaScript.
-                        Template strings can be nested in each other. This is a great feature because many people want
-                        to create dynamic strings.
+                    <div class="accordion-body">The Event Loop has one simple job — to monitor the Call Stack and the
+                        Callback Queue or Message Queue.
+                        If the Call Stack is empty, it will take the first event from the
+                        Callback queue and will push it to the Call Stack, which effectively runs it.
+                        Such an iteration is called a tick in the Event Loop.
+                        Each event is just a function callback. When any Asynchronous event occur such as setTimeOut or
+                        promises.
+                        Then these task takes some time to complete input/output if they have any.
+                        If they completed their input/output or don't have any, then they simply put into
+                        message queue or callback queue. Then event loop will firstly execute the
+                        call stack tasks and then look for callback or message queue and then execute it.
                     </div>
                 </div>
             </div>
@@ -107,27 +110,17 @@
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        There's a slight distinguishable difference between the use of <span
-                            class="fw-bold">forEach()</span> and <span class="fw-bold">map()</span>.
-                        Both of these options perform same type of tasks on an array but their main difference lies in
-                        what they
-                        return after the operation. Both of <span class="fw-bold">forEach()</span> and <span
-                            class="fw-bold">map()</span> is used to execute the same code on
-                        every element of
-                        the array but <span class="fw-bold">forEach()</span> does not change the array and it return the
-                        whole
-                        array. Whereas, <span class="fw-bold">map()</span>
-                        returns a new array
-                        with updated elements.
-                        <span class="fw-bold">filter()</span> and <span class="fw-bold">find()</span> are used to
-                        search for elements from a collection who satisfies certain
-                        criteria. <span class="fw-bold">filter()</span> returns
-                        every single element that fulfills a defined logic/argument but <span
-                            class="fw-bold">find()</span> only finds and returns
-                        the first element that
-                        satisfies the query instructions. After finding the first element <span
-                            class="fw-bold">find()</span> stops searching and
-                        returns only that element.
+                        There are Eight ways to get undefined.
+                        <ol>
+                            <li>Variables that are not initialized will return undefined</li>
+                            <li>A function that has no return statement</li>
+                            <li>Parameters that are not passed to a function will return undefined</li>
+                            <li>Properties that doesn't exist withint a object will return undefined</li>
+                            <li>Trying to access array elements outside of the index range will return undefined</li>
+                            <li>Trying to delete an element that is inside an array will return undefined</li>
+                            <li>If the value of a variable is set directly to be undefined</li>
+                            <li>If return has nothing on the right side, it provide undefined</li>
+                        </ol>
                     </div>
                 </div>
             </div>
