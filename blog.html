@@ -15,11 +15,11 @@
 
         <div class="text-center my-5">
             <h1 class="fw-bold text-white">Frequently Asked Questions</h1>
-            <p class="text-white">To land your dream job, you have to absolutely, one hundred percent
+            <p class="text-white">To land your dream job, you have to be absolutely, one hundred percent
                 sure about your
                 dedication,
-                passion, resources, capacity. Here are some frequently asked questions from our learners that might
-                help you in the right direction.
+                passion, resources and capacity. Here are some frequently asked questions about JavaScript that might
+                help you in your preparation for the Junior Web Developer job interview.
             </p>
         </div>
 
@@ -30,30 +30,23 @@
                     <button class="accordion-button collapsed bg-dark text-white" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                         aria-controls="collapseOne">
-                        State the differences between the use of Var, Let & Const in JavaScript.
+                        State the differences between Local Storage and Session Storage.
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <span class="fw-bold">Var</span> is hoisted, always declared at the top. Which acts as a
-                        global
-                        parameter. It has functional
-                        scope,
-                        so it can be used inside anywhere of a function. In contrast, <span class="fw-bold">Let</span>
-                        acts as block scope. So, it
-                        can only be used within a block of code (curly braces{}). Let can be used to reassign or
-                        updating
-                        value but it does not allow
-                        redeclaring. Whereas,
-                        <span class="fw-bold">Const</span> is neither reassignable nor redeclarable. Variables declared
-                        with the const maintain constant values. Const also, does
-                        not support functional scope.
-                        It is contrained
-                        to be block scope. <span class="fw-bold">Var</span> was immensly used before the introduction of
-                        <span class="fw-bold">ES6</span>. Right now, <span class="fw-bold">Let</span> and
-                        <span class="fw-bold">Const</span> are more popular
-                        and adviceable to use as it serves confined purposes.
+                        Both the localStorage and sessionStorage are storages that are used in the browser. Their uses
+                        and differences
+                        are based on the service they provide to the browser. The sessionStorage only lasts as long as
+                        the browser tab is
+                        in action. Once a specific tab or the browser is closed meaning that page session ends, the
+                        sessionStorage gets cleared. On the
+                        other hand, the localStorage doesn't expire. The data that are being written there is permanent
+                        unless a user explicityly removes or
+                        alternates the data. Even when a page session or the browser is closed, the data in localStorage
+                        is kept saved.
+
                     </div>
                 </div>
             </div>
@@ -64,22 +57,20 @@
                     <button class="accordion-button collapsed bg-dark text-white" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                         aria-controls="collapseTwo">
-                        What is the difference between Arrow Functions & Regular Functions in JavaScript?
+                        What is the difference between Global Scope and Block Scope?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        The first obviouos difference would be in their syntaxes. Regular functions can be used as
-                        constructor functions but arrow
-                        function can not be used for such feat. Arrow functions also do not have <span
-                            class="fw-bold">"this"</span> keyword like the
-                        regular functions. Inside a regular JavaScript
-                        function the value of <span class="fw-bold">"this"</span> can be dynamic but for Arrow functions
-                        it is fixed throughout the
-                        entire function.
-                        Regular functions allow users to pass duplicate parameters but arrow functions do not have this
-                        felxibility.
+                        Global scope refers to the entirety of the program. The overall environment a certain program is
+                        using
+                        to execute the codes. Whereas, the block scops are associated with certain type of code blocks,
+                        like "if-else",
+                        "for", "while" or "switch" statements. A variable declared in the global scope is accessible for
+                        every components of
+                        the overall window.
+                        On the ohter hand, variables declared on the block scopes are only accessible within that block.
                     </div>
                 </div>
             </div>
@@ -88,7 +79,7 @@
                     <button class="accordion-button collapsed bg-dark text-white" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                         aria-controls="collapseThree">
-                        What is Template String in JavaScript? Mention some of it uses.
+                        How JavaScript Event Loop works?
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -110,7 +101,7 @@
                     <button class="accordion-button collapsed bg-dark text-white" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
                         aria-controls="collapseFour">
-                        What are the differences betweem "map", "forEach", "filter" & "find" in JavaScript?
+                        In JavaScript, how many ways can we get a value returned "Undefined"?
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
